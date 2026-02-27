@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 5 - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="5">
+    <div class="card">
+        <div id="timer"></div>
+        <h2>Pergunta 5</h2>
+        <form id="quizForm">
+            <p>Qual jogador brasileiro marcou 15 gols em Copas do Mundo?</p>
+            <input type="radio" name="q5" value="romario" id="q5a"><label for="q5a" class="option">Romário</label><br>
+            <input type="radio" name="q5" value="ronaldo" id="q5b"><label for="q5b" class="option">Ronaldo</label><br>
+            <input type="radio" name="q5" value="zico" id="q5c"><label for="q5c" class="option">Zico</label><br>
+            <br>
+            <button type="button" onclick="nextPage(5,'q5','ronaldo')"></button>
+        </form>
+    </div>
+    <script>startTimer(15);</script>
+</body>
+</html>

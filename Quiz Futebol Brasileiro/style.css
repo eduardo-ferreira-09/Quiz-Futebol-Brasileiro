@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body:not(.home) {
+    background: url('imagem6.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    background-color: #ffffff;
+}
+button{
+    background-color: #325c56; 
+    
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #274c47;
+}
+
+.card button {
+    display: block;
+    margin: 20px auto 0;
+}
+
+
+#options button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    font-size: 1em;
+    color: #000;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+#options button:hover {
+    background-color: #e0e0e0;
+}
+
+#options button:active {
+    background-color: #d1d1d1;
+}
+
+
+.card {
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#timer {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 10px;
+    color: #e63946;
+}
+
+.question-img {
+    display: block;
+    max-width: 100px;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+
+
+body {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    margin: 20px;
+    background-color: #000000;
+    color: #000000;
+   
+}
+
+
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 0.5em;
+}
+
+form {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+
+.card {
+    max-width: 750px;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(71, 71, 71, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    background-image: url(imagem8.avif);
+    background-size: cover;
+}
+
+
+.card h2, .card h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color:  #fffb00;
+    margin-top: 25px;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.card p {
+    font-size: 1.3em;
+}
+
+.card form {
+    font-size: 1.2em;
+}
+
+.card input[type="radio"] {
+    display: none;
+}
+
+.card label.option {
+    display: block;
+    margin: 8px 0;
+    padding: 12px 18px;
+    background: #f1f1f1;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.card label.option:hover {
+    background-color: #e0e0e0;
+}
+
+.card input[type="radio"]:checked + label.option {
+    background-color: #325c56;
+    color: #fff;
+    border-color: #274c47;
+}
+input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.0em;
+    color: #ff0015;
+}
+
+
+body.home {
+    background-image: url("imagem6.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #ff0000;
+    font-size: 1.6em;
+}
+
+.welcome-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.welcome-container h1 {
+    font-size: 2.5em;
+    color: #325c56;
+}
+
+.welcome-container h1 .highlight {
+    font-family: 'Pacifico', cursive;
+    color: #ff0000;
+}
+
+.welcome-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+

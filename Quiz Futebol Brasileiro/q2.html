@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 2 - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="2">
+    <div class="card">
+        <div id="timer"></div>
+        <h2>Pergunta 2</h2>
+        <form id="quizForm">
+            <p>Qual clube carioca levantou a taça da Libertadores em 2019?</p>
+            <input type="radio" name="q2" value="flamengo" id="q2a"><label for="q2a" class="option">Flamengo</label><br>
+            <input type="radio" name="q2" value="fluminense" id="q2b"><label for="q2b" class="option">Fluminense</label><br>
+            <input type="radio" name="q2" value="vasco" id="q2c"><label for="q2c" class="option">Vasco</label><br>
+            <br>
+            <button type="button" onclick="nextPage(2,'q2','flamengo')">Próxima</button>
+        </form>
+    </div>
+    <script>startTimer(15);</script>
+</body>
+</html>

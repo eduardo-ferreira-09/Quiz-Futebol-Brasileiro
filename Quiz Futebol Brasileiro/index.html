@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Futebol Brasileiro</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="home">
+    <div id="welcome" class="card welcome-container">
+        <h1>Bem‑vindo ao <span class="highlight">QUIZ</span> de Futebol Brasileiro</h1>
+        <p>Teste seus conhecimentos sobre o futebol do Brasil em 7 perguntas.</p>
+        <button onclick="startQuiz()">Começar</button>
+    </div>
+    <div id="quiz" class="card" style="display:none;">
+        <h2 id="questionText"></h2>
+        <div id="options"></div>
+        <div id="feedback" style="margin-top:10px;font-weight:bold;"></div>
+    </div>
+</body>
+</html>

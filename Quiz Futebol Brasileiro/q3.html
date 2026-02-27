@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 3 - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="3">
+    <div class="card">
+        <div id="timer"></div>
+        <h2>Pergunta 3</h2>
+        <form id="quizForm">
+            <p>Quantos títulos mundiais de clubes o Corinthians conquistou na década de 2000?</p>
+            <input type="radio" name="q3" value="0" id="q3a"><label for="q3a" class="option">0</label><br>
+            <input type="radio" name="q3" value="1" id="q3b"><label for="q3b" class="option">1</label><br>
+            <input type="radio" name="q3" value="2" id="q3c"><label for="q3c" class="option">2</label><br>
+            <br>
+            <button type="button" onclick="nextPage(3,'q3','1')">Próxima</button>
+        </form>
+    </div>
+    <script>startTimer(15);</script>
+</body>
+</html>
