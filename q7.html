@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 7 - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="7">
+    <div class="card">
+        <div id="timer"></div>
+        <h2>Pergunta 7</h2>
+        <form id="quizForm">
+            <p>Qual jogador do Palmeiras marcou o gol do título brasileiro de 2018?</p>
+            <input type="radio" name="q7" value="dudu" id="q7a"><label for="q7a" class="option">Dudu</label><br>
+            <input type="radio" name="q7" value="willian" id="q7b"><label for="q7b" class="option">Willian</label><br>
+            <input type="radio" name="q7" value="zezeca" id="q7c"><label for="q7c" class="option">Zezeca</label><br>
+            <br>
+            <button type="button" onclick="nextPage(7,'q7','dudu')">Ver resultado</button>
+        </form>
+    </div>
+    <script>startTimer(15);</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 2 - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="2">
+    <div class="card">
+        <div id="timer"></div>
+        <h2>Pergunta 2</h2>
+        <form id="quizForm">
+            <p>Qual clube Colombiano levantou a taça da Libertadores em 2004?</p>
+            <input type="radio" name="q2" value="Once Caldas" id="q2a"><label for="q2a" class="option">Once Caldas</label><br>
+            <input type="radio" name="q2" value="Atletico Nacional" id="q2b"><label for="q2b" class="option">Atletico Nacional</label><br>
+            <input type="radio" name="q2" value="Colo Colo" id="q2c"><label for="q2c" class="option">Colo Colo</label><br>
+            <br>
+            <button type="button" onclick="nextPage(2,'q2','Once Caldas')">Próxima</button>
+        </form>
+    </div>
+    <script>startTimer(15);</script>
+</body>
+</html>

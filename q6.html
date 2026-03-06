@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 6 - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="6">
+    <div class="card">
+        <div id="timer"></div>
+        <h2>Pergunta 6</h2>
+        <form id="quizForm">
+            <p>Quantas vezes o corinthians foi eliminado na pré-libertadores?</p>
+            <input type="radio" name="q6" value="2" id="q6a"><label for="q6a" class="option">2</label><br>
+            <input type="radio" name="q6" value="6" id="q6b"><label for="q6b" class="option">6</label><br>
+            <input type="radio" name="q6" value="3" id="q6c"><label for="q6c" class="option">3</label><br>
+            <br>
+            <button type="button" onclick="nextPage(6,'q6','3')">Próxima</button>
+        </form>
+    </div>
+    <script>startTimer(15);</script>
+</body>
+</html>

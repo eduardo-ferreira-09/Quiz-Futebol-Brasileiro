@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 5 - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="5">
+    <div class="card">
+        <div id="timer"></div>
+        <h2>Pergunta 5</h2>
+        <form id="quizForm">
+            <p>Em quantas finais de libertadores o Palmeiras participou?</p>
+            <input type="radio" name="q5" value="5" id="q5a"><label for="q5a" class="option">5</label><br>
+            <input type="radio" name="q5" value="7" id="q5b"><label for="q5b" class="option">7</label><br>
+            <input type="radio" name="q5" value="3" id="q5c"><label for="q5c" class="option">3</label><br>
+            <br>
+            <button type="button" onclick="nextPage(5,'q5','7')">Próxima</button>
+        </form>
+    </div>
+    <script>startTimer(15);</script>
+</body>
+</html>

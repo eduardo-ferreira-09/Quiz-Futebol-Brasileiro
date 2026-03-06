@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body:not(.home) {
+    background: url('imagem9.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    background-color: #000000;
+}
+button{
+    background: linear-gradient(135deg, #325c56, #274c47);
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #274c47, #1e3a36);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.card button {
+    display: block;
+    margin: 20px auto 0;
+}
+
+
+#options button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 1em;
+    color: #333;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #f9f9f9, #e9e9e9);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#options button:hover {
+    background: linear-gradient(135deg, #e0e0e0, #d0d0d0);
+    border-color: #bbb;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+#options button:active {
+    background: linear-gradient(135deg, #d1d1d1, #c1c1c1);
+    transform: translateY(0);
+}
+
+
+.card {
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#timer {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 10px;
+    color: #e63946;
+}
+
+#progress-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+
+#progress-bar::after {
+    content: '';
+    display: block;
+    height: 100%;
+    background: #613c63;
+    width: var(--progress-width, 0%);
+    transition: width 0.5s ease;
+    border-radius: 10px;
+}
+
+#progress-text {
+    font-size: 1.1em;
+    color: #000;
+    font-weight: bold;
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.question-img {
+    display: block;
+    max-width: 100px;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+
+
+body {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    margin: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    text-align: center;
+    color: #ff0000;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+form {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+
+.card {
+    max-width: 750px;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    background-image: url(imagem3.webp);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+
+.card h2, .card h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color:  #000000;
+    margin-top: 25px;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.card p {
+    font-size: 1.3em;
+}
+
+.card form {
+    font-size: 1.2em;
+}
+
+.card input[type="radio"] {
+    display: none;
+}
+
+.card label.option {
+    display: block;
+    margin: 8px 0;
+    padding: 12px 18px;
+    background: #f1f1f1;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.card label.option:hover {
+    background-color: #e0e0e0;
+}
+
+.card input[type="radio"]:checked + label.option {
+    background-color: #325c56;
+    color: #fff;
+    border-color: #274c47;
+}
+input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.0em;
+    color: #ff0015;
+}
+
+
+body.home {
+    background-image: url("imagem9.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #613c63;
+    font-size: 1.6em;
+}
+
+.welcome-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.welcome-container h1 {
+    font-size: 2.5em;
+    color: #613c63;
+}
+
+.welcome-container h1 .highlight {
+    font-family: 'Pacifico', cursive;
+    color: #613c63;
+}
+
+.welcome-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+

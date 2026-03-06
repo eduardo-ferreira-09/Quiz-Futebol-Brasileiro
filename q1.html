@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 1 - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="1">
+    <div class="card">
+        <div id="timer"></div>
+        <h2>Pergunta 1</h2>
+        <form id="quizForm">
+            <p>Quem é conhecido como o "Rei do Futebol"?</p>
+            <input type="radio" name="q1" value="pele" id="q1a"><label for="q1a" class="option">Pelé</label><br>
+            <input type="radio" name="q1" value="maradona" id="q1b"><label for="q1b" class="option">Maradona</label><br>
+            <input type="radio" name="q1" value="messi" id="q1c"><label for="q1c" class="option">Messi</label><br>
+            <br>
+            <button type="button" onclick="nextPage(1,'q1','pele')">Próxima</button>
+        </form>
+    </div>
+    <script>startTimer(15);</script>
+</body>
+</html>

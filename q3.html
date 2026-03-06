@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 3 - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="3">
+    <div class="card">
+        <div id="timer"></div>
+        <h2>Pergunta 3</h2>
+        <form id="quizForm">
+            <p>Qual foi o placar da final da copa do mundo de 2018</p>
+            <input type="radio" name="q3" value="1x0" id="q3a"><label for="q3a" class="option">1x0</label><br>
+            <input type="radio" name="q3" value="2x1" id="q3b"><label for="q3b" class="option">2x1</label><br>
+            <input type="radio" name="q3" value="4x2" id="q3c"><label for="q3c" class="option">4x2</label><br>
+            <br>
+            <button type="button" onclick="nextPage(3,'q3','4x2')">Próxima</button>
+        </form>
+    </div>
+    <script>startTimer(15);</script>
+</body>
+</html>

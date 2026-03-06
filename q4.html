@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 4 - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"defer></script>
+</head>
+<body data-page="4">
+    <div class="card">
+        <div id="timer"></div>
+        <h2>Pergunta 4</h2>
+        <form id="quizForm">
+            <p>Qual o jogador com mais gols na história da Champions League?</p>
+            <input type="radio" name="q4" value="Ozil" id="q4a"><label for="q4a" class="option">Ozil</label><br>
+            <input type="radio" name="q4" value="Messi" id="q4b"><label for="q4b" class="option">Messi</label><br>
+            <input type="radio" name="q4" value="Cristiano Ronaldo" id="q4c"><label for="q4c" class="option">Cristiano Ronaldo</label><br>
+            <br>
+            <button type="button" onclick="nextPage(4,'q4','Cristiano Ronaldo')">Próxima</button>
+        </form>
+    </div>
+    <script>startTimer(15);</script>
+</body>
+</html>
